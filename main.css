@@ -513,7 +513,7 @@ img {
 }
 
 .hero {
-  background: url(/burger/img/bg.png) center center/cover no-repeat;
+  background: url(../../burger/img/bg.png) center center/cover no-repeat;
   color: #fff;
   position: relative;
 }
@@ -581,10 +581,18 @@ img {
 .feature__img {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .feature__text {
   color: #2f3234;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.feature__title {
+  font-family: "Lifehack-Medium";
+  font-size: 24px;
 }
 
 .reviews {
@@ -638,6 +646,10 @@ img {
   opacity: 0;
   transform: scale(0.8);
   transition: 0.3s;
+}
+
+.review__username {
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
 }
 
 .order-section {
