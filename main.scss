@@ -1,0 +1,34 @@
+//colors
+
+$yellow: #f9b43b;
+$red: #e45028;
+$black: #2f3234;
+
+//normalize
+
+@import "./css/layout/normalize";
+
+//setups
+@import "./css/layout/layout";
+@import "./css/layout/fonts";
+
+
+//components
+
+@import "./css/blocks/section";
+@import "./css/blocks/header";
+@import "./css/blocks/menu";
+@import "./css/blocks/hero";
+@import "./css/blocks/btn";
+@import "./css/blocks/scroll-down";
+@import "./css/blocks/features";
+@import "./css/blocks/feature";
+@import "./css/blocks/reviews";
+@import "./css/blocks/review";
+@import "./css/blocks/order";
+@import "./css/blocks/pointmenu";
+
+
+
+
+

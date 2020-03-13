@@ -1,0 +1,13 @@
+.features {
+    background: url(/burger/img/bgfeatures.png) center center / cover no-repeat;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.features__item {
+    width: calc(100% / 3 - 26px);
+}

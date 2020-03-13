@@ -1,0 +1,34 @@
+.hero {
+    background: url(/burger/img/bg.png) center center /cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+
+.hero__desc {
+    font-size: 65px;
+    @include lifehack();
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+    flex: 0.8;
+
+}
+
+.hero__text {
+    width: 50%;
+    padding-top: 160px;
+}
+
+
+
