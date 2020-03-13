@@ -513,7 +513,7 @@ img {
 }
 
 .hero {
-  background: url(../../burger/img/bg.png) center center/cover no-repeat;
+  background: url(../burger/img/bg.png) center center/cover no-repeat;
   color: #fff;
   position: relative;
 }
