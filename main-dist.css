@@ -728,52 +728,6 @@ form label {
   color: #ffffff;
 }
 
-.pointmenu {
-  position: fixed;
-  top: 200px;
-  right: 40px;
-}
-
-.pointmenu__item {
-  margin-bottom: 5px;
-}
-
-.pointmenu__link {
-  width: 16px;
-  height: 16px;
-  display: block;
-  position: relative;
-}
-.pointmenu__link:before {
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  opacity: 0;
-  transition: 0.3s;
-}
-.pointmenu__link:after {
-  width: 6px;
-  height: 6px;
-  background: #fff;
-}
-
-.pointmenu__link:after, .pointmenu__link:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-
-.pointmenu__link:hover:before {
-  width: 14px;
-  height: 14px;
-  opacity: 1;
-}
-
 .team {
   background: url(./burger/img/bgteam.png) 50% no-repeat;
   background-size: cover;
@@ -882,4 +836,50 @@ form label {
   font-weight: 300;
   color: #ffffff;
   font-size: rem(14px);
+}
+
+.pointmenu {
+  position: fixed;
+  top: 200px;
+  right: 40px;
+}
+
+.pointmenu__item {
+  margin-bottom: 5px;
+}
+
+.pointmenu__link {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+}
+.pointmenu__link:before {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+.pointmenu__link:after {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+}
+
+.pointmenu__link:after, .pointmenu__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.pointmenu__link:hover:before {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
 }
