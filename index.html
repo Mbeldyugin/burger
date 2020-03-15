@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/layout/normalize.scss">
     <link rel="stylesheet" href="./main.css">
     <title>burger</title>
@@ -54,37 +54,37 @@
                 <button type="button" class="scroll-down"></button>
             </div>        
         </section> 
-                            <div class="pointmenu">
-                                <ul class="pointmenu__list">
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                    <li class="pointmenu__item">
-                                        <a href="#" class="pointmenu__link"></a>
-                                    </li>
-                                </ul>
-                            </div>
+        <div class="pointmenu">
+            <ul class="pointmenu__list">
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+                <li class="pointmenu__item">
+                    <a href="#" class="pointmenu__link"></a>
+                </li>
+            </ul>
+        </div>
         <section class="section features">
             <div class="container">
                 <h2 class="section__title section__title--centered section__title--color--black">Мы лучшие</h2>
@@ -130,6 +130,59 @@
                     </li>
                 </ul>
             </div>
+        </section>
+
+        <section class="section team">
+            <div class="team__section">
+                <div class="section__title">Команда</div>
+                <ul class="team-acco">
+                    <li class="team-acco__item">
+                        <div class="team-acco__content">
+                            <div class="team-acco__pic">
+                                <div class="team-acco__img" style="background-image: url('./burger/img/aphex.png')">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </div>
+                            <div class="team-acco__text">
+                                <div class="team-acco__title">Оператор</div>
+                                <div class="team-acco__text-content"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team-acco__item">
+                        <div class="team-acco__content">
+                            <div class="team-acco__pic">
+                                <div class="team-acco__img" style="background-image: url('./burger/img/aphex.png')">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </div>
+                            <div class="team-acco__text">
+                                <div class="team-acco__title">Оператор</div>
+                                <div class="team-acco__text-content"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team-acco__item">
+                        <div class="team-acco__content">
+                            <div class="team-acco__pic">
+                                <div class="team-acco__img" style="background-image: url('./burger/img/aphex.png')">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </div>
+                            <div class="team-acco__text">
+                                <div class="team-acco__title">Оператор</div>
+                                <div class="team-acco__text-content"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team-acco__item">
+                        <div class="team-acco__content">
+                            <div class="team-acco__pic">
+                                <div class="team-acco__img" style="background-image: url('./burger/img/aphex.png')">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </div>
+                            <div class="team-acco__text">
+                                <div class="team-acco__title">Оператор</div>
+                                <div class="team-acco__text-content"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </section>
         <section class="reviews">
             <ul class="reviews__list">
@@ -254,34 +307,32 @@
                 <h2 class="section__title section__title--centered">
                     Закажите доставку
                 </h2>
-                <form class="order">
-                    
+                <form class="order" autocomplete="on">
+                    <div class="form__block--left">
                         <div class="order__row">
                             <label class="order__block">
                                 <div class="order__title">Имя</div>
-                                <input type="text" class="order__input">
+                                <input type="text" class="order__input" placeholder="Например, Джонни 5-й">
                             </label>
                             <label class="order__block">
                                 <div class="order__title">Телефон</div>
+                                <input type="text" class="order__input" placeholder="Например 9619618899">
+                            </label>
+                        </div> 
+                        
+                        <div class="order__row">
+                            <label class="order__block">
+                                <div class="order__title">Улица</div>
                                 <input type="text" class="order__input">
                             </label>
-                            
-                            <textarea name="form" id="" cols="30" rows="10"></textarea> 
                         </div> 
-                    
-                                <div class="order__row">
-                                    <label class="order__block">
-                                        <div class="order__title">Улица</div>
-                                        <input type="text" class="order__input">
-                                    </label>
-                                </div> 
                         
-                    <div class="order__row">
-                        <label class="order__block">
-                            <div class="order__title">Дом</div>
-                            <input type="text" class="order__input">
-                        </label>
-                        <label class="order__block">
+                        <div class="order__row">
+                            <label class="order__block--left">
+                                <div class="order__title">Дом</div>
+                                <input type="text" class="order__input">
+                            </label>
+                            <label class="order__block">
                             <div class="order__title">Корпус</div>
                             <input type="text" class="order__input">
                         </label>
@@ -293,7 +344,25 @@
                             <div class="order__title">Этаж</div>
                             <input type="text" class="order__input">
                         </label>
+                    </div>  
+                </div>
+                <div class="form__block">
+                    <div class="order__row">
+                        <label>
+                            <div class="order__title">Коментарий</div>
+                            <textarea name="formtext" cols="" rows="5"></textarea> 
+                        </label>
                     </div>    
+                    <label for="paychange">Потребуется сдача
+                        <input id="paychange" type="radio" name="payment" class="recall" checked>  
+                    </label>  
+                    <label for="paycard"> Оплата по карте
+                        <input id="paycard" type="radio" name="payment" class="recall">  
+                    </label>  
+                    <label for="recall">Не перезванивать
+                    </label>  
+                    <input id="recall" type="checkbox" class="recall" checked> 
+                </div>
                 </form>
             </div>
         </section>

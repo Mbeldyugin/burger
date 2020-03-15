@@ -9,6 +9,8 @@ $black: #2f3234;
 @import "./css/layout/normalize";
 
 //setups
+
+@import "./css/layout/mixins";
 @import "./css/layout/layout";
 @import "./css/layout/fonts";
 
@@ -27,6 +29,10 @@ $black: #2f3234;
 @import "./css/blocks/review";
 @import "./css/blocks/order";
 @import "./css/blocks/pointmenu";
+@import "./css/blocks/team";
+@import "./css/blocks/team-acco";
+
+
 
 
 

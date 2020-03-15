@@ -338,6 +338,14 @@ template {
   display: none;
 }
 
+.team-acco__content:before, .team-acco__content:after {
+  content: "";
+  display: table;
+}
+.team-acco__content:after {
+  clear: both;
+}
+
 html,
 body {
   height: 100%;
@@ -666,17 +674,35 @@ img {
   background-color: black;
 }
 
-.order__row {
-  margin-bottom: 14px;
+form {
   display: flex;
+  justify-content: space-between;
+}
+
+.form__block {
+  display: flex;
+}
+.form__block--left {
+  margin-right: 20px;
+}
+
+.order__row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 14px;
+  justify-content: space-between;
 }
 
 .order__block {
-  flex: 1;
+  width: 100%;
   margin-right: 20px;
 }
 .order__block:last-child {
   margin-right: 0;
+}
+
+.formtext {
+  width: 100%;
 }
 
 .order__title {
@@ -688,6 +714,18 @@ img {
   padding: 8px 21px;
   border: none;
   border-radius: 4px;
+}
+
+form {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
+}
+form label {
+  color: #ffffff;
+}
+
+.recall {
+  color: #ffffff;
 }
 
 .pointmenu {
@@ -734,4 +772,114 @@ img {
   width: 14px;
   height: 14px;
   opacity: 1;
+}
+
+.team {
+  background: url(../../burger/img/bgteam.png) 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.team .sectiom__title {
+  margin-bottom: 12%;
+}
+
+.team__section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding: 5% 2% 0 7%;
+}
+
+.team-acco__item {
+  margin-bottom: rem(40px);
+}
+.team-acco__item:last-child {
+  margin-bottom: 0;
+}
+.team-acco__item.active .team_acco__trigger {
+  color: #f9b43b;
+}
+.team-acco__item.active .team_acco__trigger:before {
+  transform: rotate(-180deg);
+}
+
+.team_acco__trigger {
+  color: #ffffff;
+  font-size: rem(14px);
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin-bottom: rem(20px);
+}
+.team_acco__trigger:before, .team_acco__trigger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: rem(-18px);
+  top: rem(8px);
+  width: 0;
+  height: 0;
+}
+.team_acco__trigger:before {
+  border-top: rem(7px) solid #f9b43b;
+  border-left: rem(5px) solid transparent;
+  border-right: rem(5px) solid transparent;
+  border-bottom: rem(0px) solid transparent;
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+.team_acco__trigger:after {
+  display: none;
+  border-bottom: rem(7px) solid #f9b43b;
+  border-left: rem(5px) solid transparent;
+  border-right: rem(5px) solid transparent;
+  border-bottom: rem(0px) solid transparent;
+}
+
+.team-acco__content {
+  padding-top: rem(14px);
+  display: none;
+}
+
+.team-acco__pic {
+  text-align: center;
+  width: 30%;
+}
+
+.team-acco__img {
+  display: inline-block;
+  vertical-align: top;
+  width: rem(100px);
+  height: rem(100px);
+  border-style: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.team-acco__text {
+  width: 70%;
+}
+
+.team-acco__pic, .team-acco__text {
+  float: left;
+}
+
+.team-acco__title {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: rem(14px);
+  color: #ffffff;
+  margin-bottom: rem(14px);
+}
+
+.team-acco__text-content {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: rem(14px);
 }
