@@ -1,30 +1,41 @@
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100vh;
-    min-height: 650px;
-    &--align--top {
-    justify-content: flex-start;
-    }
+    display: flex;
+    overflow: hidden;
+    // flex-direction: column;
+    // justify-content: center;
+    min-height: rem(650px);
+    position: relative;
+    // &--align--top {
+    // justify-content: flex-start;
+    // }
+
 }
 
 .section__title {
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
-    margin-bottom: 50px;
-    line-height: 1;
-    text-transform: uppercase;
+    margin-bottom: rem(12px);
+    // line-height: 1;
+    // text-transform: uppercase;
     @include gagalin();
     
-    line-height: 1;
+    // line-height: 1;
     
-    &--centered {
-        text-align: center;
+    // &--centered {
+    //     text-align: center;
+    // }
+
+    // &--color--black {
+    //     color: $black;
+    // }
+
+    &.section__title_black {
+        color: $black;
     }
 
-    &--color--black {
-        color: $black;
+    &.section__title_white {
+        color: #ffffff;
     }
 }
 
