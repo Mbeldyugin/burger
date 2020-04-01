@@ -641,6 +641,45 @@ footer {
   font-weight: 500;
 }
 
+.footer {
+  background: url("../../burger/img/bg-texture.png") center bottom no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__col {
+  width: 50%;
+  margin-bottom: 0.9375rem;
+}
+
+.footer__address {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.footer__phone {
+  color: #e45028;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer__col--right {
+  text-align: right;
+  margin-bottom: 0;
+}
+
 .hamburger-menu-link {
   vertical-align: middle;
   position: relative;
@@ -784,6 +823,14 @@ footer {
 
 .logo__icon path:nth-child(1) {
   fill: #e45028;
+}
+
+.yandex-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
@@ -1040,8 +1087,20 @@ footer {
   }
 }
 
+.team-acco__content {
+  padding-top: 0.875rem;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.875rem;
+}
+@media screen and (max-width: 768px) {
+  .team-acco__content {
+    padding: 0 25%;
+  }
+}
+
 .team-acco__item {
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.625rem;
 }
 @media screen and (max-width: 768px) {
   .team-acco__item {
@@ -1051,11 +1110,14 @@ footer {
 .team-acco__item:last-child {
   margin-bottom: 0;
 }
-.team-acco__item.active .team-acco__trigger {
+.team-acco__item--active .team-acco__trigger {
   color: #f9b43b;
 }
-.team-acco__item.active .team-acco__trigger:before {
+.team-acco__item--active .team-acco__trigger:before {
   transform: rotate(-180deg);
+}
+.team-acco__item--active .team-acco__content {
+  height: auto;
 }
 
 .team-acco__trigger {
@@ -1065,7 +1127,6 @@ footer {
   text-decoration: none;
   position: relative;
   display: block;
-  margin-bottom: 1.25rem;
 }
 .team-acco__trigger:before, .team-acco__trigger:after {
   content: "";
@@ -1101,19 +1162,9 @@ footer {
   }
 }
 
-.team-acco__content {
-  padding-top: 0.875rem;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .team-acco__content {
-    padding: 0 25%;
-  }
-}
-
 .team-acco__pic {
   text-align: center;
-  width: 30%;
+  width: 24%;
 }
 @media screen and (max-width: 768px) {
   .team-acco__pic {
@@ -1122,8 +1173,6 @@ footer {
 }
 
 .team-acco__img {
-  display: inline-block;
-  vertical-align: top;
   width: 6.25rem;
   height: 6.25rem;
   border-style: cover;
@@ -1134,7 +1183,8 @@ footer {
 }
 
 .team-acco__text {
-  width: 70%;
+  width: 40%;
+  line-height: 1.5rem;
 }
 
 .team-acco__pic, .team-acco__text {
@@ -1484,6 +1534,33 @@ footer {
   padding-right: 0;
   text-transform: none;
   background: transparent;
+}
+
+.socials {
+  position: relative;
+  top: 50%;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.625rem;
+}
+
+.socials__link {
+  display: inline-block;
+  max-width: 1.4375rem;
+  max-height: 1.25rem;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.socials__link:hover {
+  opacity: 1;
+}
+
+.socials__link-icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .text-block p {

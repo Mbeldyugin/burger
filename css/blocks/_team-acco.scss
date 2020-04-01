@@ -4,8 +4,20 @@
 	}
 }
 
+.team-acco__content {
+	@extend %clearfix;
+	padding-top: rem(14px);
+	// display: none;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: rem(30px);
+
+	@include tablets {
+		padding: 0 25%;
+	}
+}
 .team-acco__item {
-  margin-bottom: rem(40px);
+  margin-bottom: rem(10px);
   
   @include tablets {
     margin-bottom: rem(30px);
@@ -15,13 +27,17 @@
 		margin-bottom: 0;
 	}
 
-	&.active {
+	&--active {
 		.team-acco__trigger {
 			color: $yellow;
 
 			&:before {
 				transform: rotate(-180deg);
 			}
+			
+		}
+		.team-acco__content {
+			height: auto;
 		}
 	}
 }
@@ -33,7 +49,6 @@
 	text-decoration: none;
 	position: relative;
 	display: block;
-	margin-bottom: rem(20px);
 
 	&:before, &:after {
 		content: "";
@@ -42,7 +57,7 @@
 		left: rem(-18px);
 		top: rem(8px);
 		width: 0;
-    height: 0;
+    	height: 0;
 	}
 
 	&:before {
@@ -61,7 +76,7 @@
 		border-right: rem(5px) solid transparent;
 		border-top: rem(0px) solid transparent;
 	}
-
+	
 	@include tablets {
 		display: inline-block;
 		font-size: rem(25px);
@@ -72,19 +87,10 @@
 	}
 }
 
-.team-acco__content {
-	@extend %clearfix;
-	padding-top: rem(14px);
-	display: none;
-
-	@include tablets {
-		padding: 0 25%;
-	}
-}
 
 .team-acco__pic {
 	text-align: center;
-	width: 30%;
+	width: 24%;
 
 	@include tablets {
 		margin-bottom: rem(15px);
@@ -92,7 +98,7 @@
 }
 
 .team-acco__img {
-	@include inlineblock();
+	// @include inlineblock();
 	width: rem(100px);
 	height: rem(100px);
 	@include cover;
@@ -100,7 +106,8 @@
 }
 
 .team-acco__text {
-	width: 70%;
+	width: 40%;
+	line-height: rem(24px);
 }
 
 .team-acco__pic, .team-acco__text {
