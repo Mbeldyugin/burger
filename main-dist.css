@@ -933,7 +933,7 @@ footer {
 }
 
 .menu {
-  background: url("../../burger/img/bgmenu.png") 50% no-repeat;
+  background: url("./burger/img/bgmenu.png") 50% no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1347,7 +1347,7 @@ footer {
 }
 
 .order {
-  background: url("../../burger/img/bg-texture.png") 50% no-repeat;
+  background: url("./burger/img/bg-texture.png") 50% no-repeat;
   background-size: cover;
   background-color: #2f3234;
   display: flex;
