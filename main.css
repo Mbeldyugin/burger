@@ -1347,9 +1347,8 @@ footer {
 }
 
 .order {
-  background: url("./burger/img/bg-texture.png") 50% no-repeat;
-  background-size: cover;
-  background-color: #2f3234;
+  background: url("./burger/img/bg-texture.png") no-repeat;
+  background-position: center;
   display: flex;
   align-items: center;
 }

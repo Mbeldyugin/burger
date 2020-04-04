@@ -1,7 +1,8 @@
 .order {
-  background: url("./burger/img/bg-texture.png") 50% no-repeat;
-  background-size: cover;
-  background-color: $black;
+  background: url("./burger/img/bg-texture.png") no-repeat;
+  // background-size: cover;
+  background-position: center;
+  // background-color: $black;
   display: flex;
   align-items: center;
   .section__title {
