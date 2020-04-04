@@ -659,7 +659,7 @@ footer {
 
 .footer__col {
   width: 50%;
-  margin-bottom: 0.9375rem;
+  margin: 0.1875rem;
 }
 
 .footer__address {
