@@ -4,19 +4,20 @@
     position: relative;
 
 }
-
-.hero__content {
-    display: flex;
-
-}
-
 .hero__container {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 15%;
+    
 }
+
+.hero__content {
+    display: flex;
+}
+
 
 .hero__left,
 .hero__right {
