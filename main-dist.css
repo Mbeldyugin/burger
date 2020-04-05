@@ -627,7 +627,7 @@ footer {
 }
 
 .slider {
-  background: url("../../burger/img/bgslider.svg") center center no-repeat;
+  background: url("./burger/img/bgslider.svg") center center no-repeat;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -636,7 +636,7 @@ footer {
 }
 
 .video {
-  background: url("../../burger/img/bgvideo.png") center center no-repeat;
+  background: url("./burger/img/bgvideo.png") center center no-repeat;
   text-align: center;
   display: flex;
   align-items: center;
