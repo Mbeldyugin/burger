@@ -1,9 +1,113 @@
 .video {
-    background: url("./burger/img/bgvideo.png") center center no-repeat;
-    text-align: center;
     display: flex;
-    align-items: center;
-    background-position: center center;
+    background: url("./burger/img/bgvideo.png") center center no-repeat;
     background-size: cover;
-}     
+    background-position: center center;
+    text-align: center;
+    align-items: center;
+
+    &__container {
+        // width: rem(660px);
+        display: flex;
+        margin: 0 auto;
+    }
+}    
+
+.player {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+
+    &.active .player__splash 
+    {
+        display: none;
+    }
+
+    &.paused {
+        .player__start {
+            width: 14px;
+            height: 22px;
+            border: none;
+
+            &:after,
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 5px;
+                top: 0;
+                bottom: 0;
+                background: #626262;
+            }
+
+            &:after {
+                right: 0;
+            }
+
+            &:before {
+                left: 0;
+            }
+
+        }
+    }
+
+    &__splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../../burger/img/bg-texture.png) center center/cover no-repeat;
+        cursor: pointer;
+    }
+
+    &__controls {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 35px;
+        background: #3e3e3e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+
+    &__playback {
+        height: 16px;
+        width: 446px;
+        position: relative;
+        
+        &:before {
+            content: '';
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            background: #626262;
+            transform: translateY(-50%);
+        }
+        
+        &-button {
+            background: #626262;
+            border-radius: 50px;
+            border: none;
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+
+    }
+
+}
+
+
      

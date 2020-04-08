@@ -301,9 +301,30 @@
 
               <ection class="section video">
                 <div class="container">
-                  
+                  <div class="section__title section__title_black">Как мы работаем</div>
+                  <div class="video__container">
+                    <div class="player active">
+                      <div class="player__wrapper">
+                        <div id="yt-player" class="player__elem"></div>
+                        <div class="player__splash"></div>
+                      </div>
+                      <div class="player__controls">
+                        <button class="player__start">
+                        </button>
+                        <div class="player__playback">
+                          <button class="player__playback-button"></button>
+                        </div>
+                        <div class="player__duration">
+                          <span class="player__duration-completed">0:00</span>
+                          <span class="player__duration-estimate">0:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </ection>
+
+              
             
               <section class="section order">
                 <div class="container">
@@ -467,5 +488,11 @@
             </div>
         </div>
     </div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+                
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./scripts/player.js"></script>
 </body>
 </html>
