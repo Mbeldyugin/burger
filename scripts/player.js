@@ -22,10 +22,10 @@ let eventsInit = () => {
     $(".player__playback").click(e => {
         const bar = $(e.currentTarget);
         const clickedPosition = e.originalEvent.layerX;
-        const newbuttonPoaitionPercent = (clickedPosition / bar.width()) * 100;
-        const newPlaybackPositionSec = (player.getDuration() / 100) * newbuttonPoaitionPercent;
+        const newbuttonPositionPercent = (clickedPosition / bar.width()) * 100;
+        const newPlaybackPositionSec = (player.getDuration() / 100) * newbuttonPositionPercent;
         $(".player__playback-button").css({
-            left: `${newbuttonPoaitionPercent}%`
+            left: `${newbuttonPositionPercent}%`
         });
 
         player.seekTo(newPlaybackPositionSec);
@@ -87,5 +87,4 @@ function onYouTubeIframeAPIReady() {
         // }
     });
 }
-
 eventsInit();

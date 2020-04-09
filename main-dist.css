@@ -627,7 +627,7 @@ footer {
 }
 
 .slider {
-  background: url("./burger/img/bgslider.svg") center center no-repeat;
+  background: gradient(#f9b33b 0%, #ea8c38 48%, #f9b33b 74%);
   background-size: cover;
   text-align: center;
   display: flex;
@@ -683,7 +683,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../../burger/img/bg-texture.png) center center/cover no-repeat;
+  background: url(./burger/img/bg-texture.png) center center/cover no-repeat;
   cursor: pointer;
 }
 .player__controls {
