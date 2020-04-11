@@ -73,18 +73,19 @@ function onYouTubeIframeAPIReady() {
         width: '660',
         videoId: 'gs4khYWdi7s',
         events: {
-        'onReady': onPlayerReady,
-        // 'onStateChange': onPlayerStateChange
-        }
+            onReady: onPlayerReady,
+            // onStateChange: onPlayerStateChange
+        },
         
-        // playerVars: {
-        //     controls:0,
-        //     disablekb:0,
-        //     showinfo:0,
-        //     rel:0,
-        //     autoplay:0,
-        //     modestbranding:0,
-        // }
+        playerVars: {
+            controls:0,
+            disablekb:0,
+            showinfo:0,
+            rel:0,
+            autoplay:0,
+            modestbranding:0
+        }
     });
 }
+
 eventsInit();
