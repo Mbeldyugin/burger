@@ -123,11 +123,12 @@
                 </div>
             </section>
 
-            <ection class="section slider">
+            <!-- <ection class="section slider">
               <div class="container">
 
               </div>
-            </ection>
+            </ection> -->
+
     
             <section class="section team">
                 <div class="team__section">
@@ -297,6 +298,12 @@
                     </div>
                   </li>
                 </ul>
+                <div class="overlay">
+                  <div class="modal">
+                    <p class="modal__text"></p>
+                    <span class="close close--modal"></span>
+                  </div>
+                </div>
               </section>
 
               <section class="section video">
@@ -310,8 +317,8 @@
                       </div>
                       <div class="player__controls">
                         <button class="player__start">
-                          <svg class="player__start-icon" style="fill: #626262">
-                            <use xlink:href="./burger/img/play.svg"></use>
+                          <svg class="player__start-icon">
+                            <use xlink:href="./burger/img/sprite.svg#play"></use>
                         </svg>
                         </button>
                         <div class="player__playback">
@@ -426,7 +433,7 @@
                         <li class="socials__item">
                           <a href="#" class="socials__link">
                             <svg class="socials__link-icon" style="fill: #fff">
-                              <use xlink:href="./burger/img/vk.svg"></use>
+                              <use xlink:href="./burger/img/sprite.svg#vk"></use>
                             </svg>
                           </a>
                         </li>
@@ -498,6 +505,7 @@
                 
     </script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./scripts/modal.js"></script>
     <script src="./scripts/player.js"></script>
 </body>
 </html>

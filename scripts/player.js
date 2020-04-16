@@ -4,16 +4,11 @@ const playerContainer = $('.player');
 let eventsInit = () => {
     $(".player__start").click(e => {
         e.preventDefault();
+        const btn = $(e.currentTarget);
 
         if (playerContainer.hasClass('paused')) {
-            playerContainer.removeClass('paused');
             player.pauseVideo();
-            
-
-
         } else {
-            
-            playerContainer.addClass('paused');
             player.playVideo();
         }
 
@@ -31,6 +26,10 @@ let eventsInit = () => {
         player.seekTo(newPlaybackPositionSec);
 
     });
+
+    $(".player__splash").click(e => {
+        player.playVideo();
+    })
 };
 
 const formatTime = timeSec => {
@@ -67,6 +66,27 @@ const onPlayerReady = () => {
     }, 1000);
 }
 
+const onPlayerStateChange = event => {
+    /* -1 (воспроизведение видео не начато)
+        0 (воспроизведение видео завершено)
+        1 (воспроизведение)
+        2 (пауза)
+        3 (буферизация)
+        5 (видео подают реплики).
+    */
+    switch (event.data) {
+        case 1:
+            playerContainer.addClass('active');
+            playerContainer.addClass('paused');
+            break;
+            
+            case 2:
+                playerContainer.removeClass('active')
+                playerContainer.removeClass('paused');
+            break;
+    }
+}
+
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
         height: '405',
@@ -74,7 +94,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'gs4khYWdi7s',
         events: {
             onReady: onPlayerReady,
-            // onStateChange: onPlayerStateChange
+            onStateChange: onPlayerStateChange
         },
         
         playerVars: {
