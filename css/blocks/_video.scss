@@ -105,6 +105,7 @@
             left: 0;
             right: 0;
             background: #626262;
+            border-radius: 2px;
             transform: translateY(-50%);
         }
         
@@ -128,13 +129,65 @@
         background: transparent;
         cursor: pointer;
         display: block;
-        margin-right: 20px;
         &-icon {
             margin-top: 3px;
             width: 25px;
-            height: 25px;
+            height: 23px;
             fill: #626262;
         }
     }
+
+    &__volume {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 15%;
+        
+        &-btn  {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+        }      
+        &-icon {
+            width: 20px;
+            height: 23px;
+            fill: #626262;
+        }  
+        
+        &-control {
+            height: 16px;
+            width: 53%;
+            position: relative;
+        
+            &:before {
+                content: '';
+                height: 4px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                background: #626262;
+                border-radius: 2px;
+                transform: translateY(-50%);
+            }
+        
+        }
+
+        &-slider {
+            background: #626262;
+            border-radius: 50px;
+            border: none;
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+
+    }
+
 
 }   
